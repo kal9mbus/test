@@ -1,13 +1,16 @@
 "use strict";
 
-let person = {
-    name: "name",
-    age: 25,
-    isMarried: false,
-};
+let money = prompt("Ваш бюджет на месяц?");
+let time = prompt("Введте дату в формате YYYY-MM-DD");
+let question1 = prompt("Введите обязательнуюстатью расходов в этом месяце");
+let question2 = prompt("Во сколько обойдется?");
 
-console.log(person.name)
-person.name = prompt("Как тебя зовут?", "");
-console.log(person.name);
-let age_ = confirm("Тебе есть 18??");
-console.log(age_);
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: 'question1 + " : " + question2',
+    optionalEspenses:null,
+    income: null,
+    savings: false
+}
+alert("Ваш бюджет на 1 день: "+(money/30));
